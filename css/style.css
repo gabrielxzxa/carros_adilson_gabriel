@@ -90,7 +90,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible 
 .site-nav a {
   font-size:11px;
   letter-spacing:.08em;
-  color:#e2e1dc;
+  color:white;
   transition:color .2s;
   position:relative;
   padding:9px 0
@@ -131,17 +131,33 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible 
   object-position:center 54%
 }
 .sombra-destaque {
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,#111b 0%,#111a 40%,#1113 76%),linear-gradient(0deg,#1119,transparent 46%)
-}
+  inset: 0;
+  background:
+    linear-gradient(90deg, #111b 0%, #111a 40%, #1113 76%),
+    linear-gradient(0deg, #1119, transparent 46%);}
 .conteudo-destaque {
   position:absolute;
   left:12vw;
   top:50%;
   transform:translateY(-39%);
   z-index:1;
-  max-width:850px
+  max-width:350px
+}
+.home-hero .conteudo-destaque {
+  left:50%;
+  right:auto;
+  top:43%;
+  width:min(1000px,84vw);
+  max-width:none;
+  transform:translate(-50%,-50%);
+  text-align:center
+}
+.home-hero .conteudo-destaque h1 {
+  max-width:none
+}
+.home-hero .conteudo-destaque p {
+  margin-left:auto;
+  margin-right:auto
 }
 .eyebrow {
   display:block;
