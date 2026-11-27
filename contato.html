@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#151515">
+    <meta name="description" content="Fale com a equipe do projeto independente de fãs de Carros.">
+    <title>Contato — CARS</title>
+    <link rel="preconnect" href="https://images.squarespace-cdn.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body id="topo">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="CARS, página inicial"><span class="wordmark-icon">C</span><span>CARS<small>THE WORLD OF RADIATOR SPRINGS</small></span></a>
+      <input class="controle-menu" type="checkbox" id="controle-menu" aria-label="Abrir ou fechar menu">
+      <label class="menu-toggle" for="controle-menu" aria-hidden="true"><span></span><span></span></label>
+      <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="personagens.html">Personagens</a>
+        <a href="radiator-springs.html">Radiator Springs</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero page-hero--contact">
+        <img class="hero-image" src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/3b775cea-291b-421e-8e4c-c08692764332/bg.jpg?format=1800w" alt="A estrada atravessa o deserto rumo a Radiator Springs">
+        <div class="sombra-destaque"></div>
+        <div class="conteudo-destaque revelar">
+          <span class="eyebrow">A linha está aberta</span>
+          <h1>Vamos conversar.</h1>
+          <p>Tem uma lembrança favorita da Rota 66? Mande uma mensagem para o projeto.</p>
+        </div>
+      </section>
+      <section class="contact-layout">
+        <aside class="contact-info">
+          <span class="eyebrow eyebrow-red">Contato</span>
+          <h2>Estamos<br>por aqui.</h2>
+          <p>Este projeto de fã é feito para quem gosta de pegar a estrada com a turma de Radiator Springs. Escreva uma mensagem pelo formulário.</p>
+          <div class="aviso-ilustrativo">
+            <strong>Informações ilustrativas:</strong>
+            este site é um projeto demonstrativo independente. Não há atendimento oficial, endereço comercial ou canal de suporte associado à Disney ou à Pixar.
+          </div>
+          <div class="detalhe-contato">
+            <span>Projeto</span>
+            <b>CARS · The World of Radiator Springs</b>
+          </div>
+          <div class="detalhe-contato">
+            <span>Assunto</span>
+            <b>Universo do filme e deste site</b>
+          </div>
+        </aside>
+        <div class="area-formulario-contato">
+          <span class="eyebrow eyebrow-red">Sua mensagem</span>
+          <h2>Escreva para nós.</h2>
+          <form id="contact-form" novalidate>
+            <div class="grade-formulario">
+              <div class="campo">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+                <span class="field-error" id="name-error"></span>
+              </div>
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <span class="field-error" id="email-error"></span>
+              </div>
+              <div class="campo largura-total">
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required aria-describedby="subject-error">
+                  <option value="">Selecione um assunto</option>
+                  <option value="filme">O filme Carros</option>
+                  <option value="personagens">Personagens</option>
+                  <option value="radiator-springs">Radiator Springs</option>
+                  <option value="site">Este site</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span class="field-error" id="subject-error"></span>
+              </div>
+              <div class="campo largura-total">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message"   minlength="10" aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+              <div class="campo largura-total">
+                <button class="button button-red" type="submit">Validar mensagem <span>→</span></button>
+              </div>
+            </div>
+            <p class="form-disclaimer">Formulário demonstrativo: a validação acontece no seu navegador. Nenhuma mensagem é enviada ou armazenada em servidor.</p>
+            <div class="status-formulario" id="status-formulario" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="rodape-principal">
+      
+        <br>
+        <div class="navegacao-rodape">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="personagens.html">Personagens</a>
+          <a href="radiator-springs.html">Radiator Springs</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <a class="back-top" href="#topo">VOLTAR AO TOPO ↑</a>
+      </div>
+      <div class="rodape-base">
+        <span>Adilson gabriel 2026-©Todos os direitos reservados
+              Trabalho acadêmico sem fins lucrativos.</span>
+        
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+@media(max-width:950px) {
+  :root {
+    --header:70px
+  }
+  .site-header {
+    padding:0 5vw
+  }
+  .site-nav {
+    gap:15px
+  }
+  .site-nav a {
+    font-size:10px
+  }
+  .section {
+    padding-left:8vw;
+    padding-right:8vw
+  }
+  .conteudo-destaque {
+    left:8vw
+  }
+  .intro-section,.editorial-lead,.town-intro {
+    gap:6vw
+  }
+  .texto-destaque {
+    padding:60px 6vw
+  }
+  .next-stop {
+    padding-left:8vw;
+    padding-right:8vw
+  }
+  .character-gallery {
+    padding-left:8vw;
+    padding-right:8vw
+  }
+  .rodape-principal {
+    grid-template-columns:1fr 1fr;
+    gap:25px
+  }
+  .film-facts {
+    padding-left:8vw;
+    padding-right:8vw
+  }
+  .content-block,.trivia-strip,.gallery-intro,.contact-layout {
+    padding-left:8vw;
+    padding-right:8vw
+  }
+  .texto-local {
+    padding:45px 6vw
+  }
+}
+@media(max-width:700px) {
+  :root {
+    --header:66px
+  }
+  .site-header {
+    padding:0 6vw
+  }
+  .wordmark {
+    font-size:22px
+  }
+  .wordmark-icon {
+    width:33px;
+    height:33px
+  }
+  .controle-menu {
+    display:block;
+    position:absolute;
+    width:1px;
+    height:1px;
+    opacity:0
+  }
+  .menu-toggle {
+    display:flex;
+    width:42px;
+    height:42px;
+    background:transparent;
+    border:0;
+    flex-direction:column;
+    justify-content:center;
+    gap:6px;
+    align-items:center;
+    cursor:pointer
+  }
+  .controle-menu:focus-visible + .menu-toggle {
+    outline:3px solid var(--yellow);
+    outline-offset:4px
+  }
+  .menu-toggle span {
+    width:23px;
+    height:2px;
+    background:white;
+    transition:transform .2s
+  }
+  .controle-menu:checked + .menu-toggle span:first-child {
+    transform:translateY(4px) rotate(45deg)
+  }
+  .controle-menu:checked + .menu-toggle span:last-child {
+    transform:translateY(-4px) rotate(-45deg)
+  }
+  .site-nav {
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:var(--header);
+    background:var(--black);
+    padding:14px 7vw 24px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    border-top:1px solid #ffffff20
+  }
+  .controle-menu:checked ~ .site-nav {
+    display:flex
+  }
+  .site-nav a {
+    font-size:12px;
+    padding:14px 0;
+    border-bottom:1px solid #ffffff17
+  }
+  .site-nav a:after {
+    display:none
+  }
+  .home-hero {
+    height:790px;
+    min-height:690px;
+    max-height:100svh
+  }
+  .hero-image {
+    object-position:57% center
+  }
+  .sombra-destaque {
+    background:linear-gradient(90deg,#111b 0%,#1118 65%,#1113),linear-gradient(0deg,#111a,transparent 60%)
+  }
+  .conteudo-destaque {
+    left:7vw;
+    right:7vw;
+    top:49%;
+    transform:translateY(-35%)
+  }
+  .conteudo-destaque h1 {
+    font-size:clamp(55px,12vw,82px);
+    line-height:.92
+  }
+  .conteudo-destaque h1 br {
+    display:none
+  }
+  .conteudo-destaque p {
+    font-size:13px;
+    max-width:350px
+  }
+  .hero-caption {
+    display:none
+  }
+  .hero-index {
+    left:7vw
+  }
+  .section {
+    padding:76px 7vw
+  }
+  .intro-section {
+    grid-template-columns:1fr;
+    gap:25px
+  }
+  .titulo-secao h2,.cabecalho-secao h2,.next-stop h2 {
+    font-size:57px
+  }
+  .texto-introdutorio .lead {
+    font-size:16px
+  }
+  .mcqueen-feature {
+    grid-template-columns:1fr
+  }
+  .imagem-destaque {
+    height:340px;
+    min-height:0
+  }
+  .texto-destaque {
+    padding:55px 8vw 68px
+  }
+  .texto-destaque h2 {
+    font-size:88px
+  }
+  .feature-number {
+    font-size:160px;
+    bottom:-44px
+  }
+  .cabecalho-secao {
+    display:block
+  }
+  .cabecalho-secao>.text-link {
+    margin-top:20px
+  }
+  .grade-previa {
+    grid-template-columns:1fr;
+    gap:12px
+  }
+  .preview-card {
+    height:330px
+  }
+  .town-feature {
+    height:650px;
+    min-height:570px
+  }
+  .town-feature>img {
+    object-position:58% center
+  }
+  .sobreposicao-cidade {
+    background:linear-gradient(90deg,#151515c9,#15151539),linear-gradient(0deg,#15151588,transparent 55%)
+  }
+  .texto-cidade {
+    left:7vw;
+    right:7vw
+  }
+  .texto-cidade h2 {
+    font-size:105px
+  }
+  .town-stamp {
+    width:84px;
+    height:84px;
+    font-size:12px;
+    right:7vw;
+    bottom:28px
+  }
+  .next-stop {
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:75px 7vw
+  }
+  .rodape-principal {
+    grid-template-columns:1fr;
+    gap:22px
+  }
+  .navegacao-rodape {
+    max-width:360px
+  }
+  .rodape-base {
+    flex-direction:column;
+    gap:8px
+  }
+  .page-hero {
+    height:490px;
+    min-height:440px
+  }
+  .page-hero .conteudo-destaque {
+    top:60%;
+    left:7vw;
+    right:7vw
+  }
+  .page-hero h1 {
+    font-size:78px
+  }
+  .page-hero p {
+    font-size:12px
+  }
+  .editorial-lead {
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:65px 7vw
+  }
+  .editorial-lead h2,.content-block h2 {
+    font-size:50px
+  }
+  .film-facts {
+    grid-template-columns:1fr 1fr;
+    padding:28px 7vw;
+    gap:20px 10px
+  }
+  .dado-filme {
+    padding:0 10px;
+    border-right:0;
+    border-left:1px solid #ffffff55
+  }
+  .dado-filme:first-child {
+    padding-left:10px
+  }
+  .dado-filme strong {
+    font-size:24px
+  }
+  .content-block {
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:60px 7vw
+  }
+  .content-block img {
+    aspect-ratio:1.35
+  }
+  .content-block.dark img {
+    order:2
+  }
+  .trivia-strip {
+    padding:60px 7vw
+  }
+  .grade-curiosidades {
+    grid-template-columns:1fr;
+    gap:10px
+  }
+  .trivia-strip h2 {
+    font-size:39px
+  }
+  .gallery-intro {
+    padding:65px 7vw 30px;
+    display:block
+  }
+  .gallery-intro h2 {
+    font-size:57px
+  }
+  .gallery-intro p {
+    margin-top:17px
+  }
+  .character-gallery {
+    padding:0 7vw 70px;
+    grid-template-columns:1fr 1fr;
+    gap:10px
+  }
+  .conteudo-cartao-personagem {
+    padding:14px
+  }
+  .character-card h2 {
+    font-size:24px
+  }
+  .character-card p {
+    font-size:10px
+  }
+  .town-intro {
+    padding:60px 7vw;
+    grid-template-columns:1fr;
+    gap:25px
+  }
+  .town-intro h2 {
+    font-size:61px
+  }
+  .place-row {
+    grid-template-columns:1fr
+  }
+  .place-row.reverse .imagem-local {
+    order:0
+  }
+  .imagem-local {
+    height:270px;
+    min-height:0
+  }
+  .texto-local {
+    padding:38px 8vw 48px
+  }
+  .texto-local h2 {
+    font-size:47px
+  }
+  .route-banner {
+    padding:45px 7vw;
+    display:block
+  }
+  .route-banner p {
+    margin:18px 0 0
+  }
+  .contact-layout {
+    grid-template-columns:1fr;
+    gap:45px;
+    padding:60px 7vw 75px
+  }
+  .contact-info h2,.area-formulario-contato h2 {
+    font-size:42px
+  }
+  .grade-formulario {
+    gap:12px
+  }
+  .page-hero--contact {
+    height:450px;
+    min-height:410px
+  }
+}
+@media(max-width:380px) {
+  .character-gallery {
+    grid-template-columns:1fr
+  }
+  .character-card img {
+    aspect-ratio:1.5
+  }
+  .conteudo-destaque h1 {
+    font-size:53px
+  }
+  .grade-formulario {
+    grid-template-columns:1fr
+  }
+  .campo.largura-total {
+    grid-column:auto
+  }
+  .site-footer {
+    padding-left:6vw;
+    padding-right:6vw
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto
+  }
+  *,*:before,*:after {
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important
+  }
+  .revelar {
+    opacity:1;
+    transform:none
+  }
+}
+.revelar,.revelar.is-visible {
+  opacity:1;
+  transform:none;
+  transition:none
+}
